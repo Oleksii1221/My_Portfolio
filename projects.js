@@ -6,6 +6,8 @@ const projects = [
     language: "HTML",
     status: "Завершено",
     tone: "violet",
+    mark: "VZ",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Vuzol_Pb/master/assets/hero-devices.png",
   },
   {
     name: "KEP Schedule",
@@ -14,6 +16,7 @@ const projects = [
     language: "HTML",
     status: "Завершено",
     tone: "orange",
+    mark: "KEP",
   },
   {
     name: "Kokos",
@@ -23,6 +26,8 @@ const projects = [
     language: "Python",
     status: "В роботі",
     tone: "teal",
+    mark: "K",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Kokos/master/assets/kokoclip-logo.png",
   },
   {
     name: "KicoAudioEditor",
@@ -32,6 +37,8 @@ const projects = [
     language: "Python",
     status: "Завершено",
     tone: "pink",
+    mark: "KAE",
+    image: "https://raw.githubusercontent.com/Oleksii1221/KicoAudioEditor/master/docs/assets/kae_mascot.png",
   },
   {
     name: "PIDron",
@@ -41,6 +48,8 @@ const projects = [
     language: "JavaScript",
     status: "В роботі",
     tone: "blue",
+    mark: "PID",
+    image: "https://raw.githubusercontent.com/Oleksii1221/PIDron/master/assets/icon.png",
   },
   {
     name: "Є-Рука",
@@ -50,6 +59,7 @@ const projects = [
     language: "Python",
     status: "Завершено",
     tone: "red",
+    mark: "ER",
     image: "https://raw.githubusercontent.com/Oleksii1221/Ye-ruka/master/docs/INTERFACE_PREVIEW.png",
   },
   {
@@ -59,6 +69,7 @@ const projects = [
     language: "Python",
     status: "Завершено",
     tone: "yellow",
+    mark: "MBK",
   },
   {
     name: "Thermometer",
@@ -67,6 +78,7 @@ const projects = [
     language: "Python",
     status: "Завершено",
     tone: "green",
+    mark: "TMP",
   },
   {
     name: "MEDUZA",
@@ -75,6 +87,7 @@ const projects = [
     language: "C++",
     status: "Завершено",
     tone: "violet",
+    mark: "MDZ",
   },
   {
     name: "ESP NOW Testing",
@@ -83,6 +96,7 @@ const projects = [
     language: "Embedded",
     status: "Завершено",
     tone: "teal",
+    mark: "ESP",
   },
   {
     name: "Hodivnytsya",
@@ -91,6 +105,8 @@ const projects = [
     language: "C++",
     status: "Завершено",
     tone: "orange",
+    mark: "HDV",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Hodivnytsya/master/Connection%20diagram.png",
   },
 ];
 
@@ -103,6 +119,7 @@ for (const project of projects) {
   const article = card.querySelector("article");
   const repositoryLink = card.querySelector(".card-link");
   const image = card.querySelector(".project-image");
+  const mark = card.querySelector(".project-mark");
   const liveLink = card.querySelector(".live-link");
 
   article.classList.add(`tone-${project.tone}`);
@@ -111,6 +128,7 @@ for (const project of projects) {
   image.src = project.image || `https://opengraph.githubassets.com/portfolio-card/Oleksii1221/${project.repository.split("/").pop()}`;
   image.alt = `Прев'ю проєкту ${project.name}`;
   image.addEventListener("error", () => image.classList.add("image-unavailable"), { once: true });
+  mark.textContent = project.mark || project.name.slice(0, 3).toUpperCase();
   card.querySelector(".status").textContent = project.status;
   card.querySelector(".status").classList.toggle("is-active", project.status === "В роботі");
   card.querySelector("h3").textContent = project.name;
