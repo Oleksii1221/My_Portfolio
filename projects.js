@@ -3,7 +3,7 @@ const projects = [
     name: "Vuzol",
     repository: "https://github.com/Oleksii1221/Vuzol_Pb",
     description: "Екосистема для телефону та ПК, де можна переглядати 3D-моделі через простий інструмент замість громіздких інструкцій. Підходить для виробництва, навчання, сервісу й показу збірок.",
-    language: "3D / Mobile / PC",
+    tags: ["Автор і розробник", "Phone + PC", "3D viewer", "Production"],
     status: "Завершено",
     tone: "violet",
     mark: "VZ",
@@ -13,7 +13,7 @@ const projects = [
     name: "KEP Schedule",
     repository: "https://github.com/Oleksii1221/KEP_Schedule_PB",
     description: "Екосистема для розкладу Коледжу електронних приладів: Android APK, Telegram-бот, канали оновлень і зручний доступ для студентів без ручного пошуку пар.",
-    language: "APK / Telegram",
+    tags: ["Автор і розробник", "Android APK", "Telegram bot", "College schedule"],
     status: "Завершено",
     tone: "orange",
     mark: "KEP",
@@ -23,7 +23,7 @@ const projects = [
     repository: "https://github.com/Oleksii1221/Kokos",
     website: "https://oleksii1221.github.io/Kokos/",
     description: "Self-hosted Telegram-бот для чатів: знаходить TikTok і YouTube Shorts, завантажує відео через yt-dlp/ffmpeg, кешує file_id і веде статистику.",
-    language: "Telegram bot",
+    tags: ["Автор і розробник", "Telegram bot", "Docker", "yt-dlp"],
     status: "В роботі",
     tone: "teal",
     mark: "K",
@@ -34,7 +34,7 @@ const projects = [
     repository: "https://github.com/Oleksii1221/KicoAudioEditor",
     website: "https://oleksii1221.github.io/KicoAudioEditor/",
     description: "Desktop-редактор аудіометаданих: теги, обкладинки, lyrics/comments, batch-правки, JSON backup і зручне прибирання музичної бібліотеки.",
-    language: "Desktop app",
+    tags: ["Автор і розробник", "Windows", "Linux", "Desktop app"],
     status: "Завершено",
     tone: "pink",
     mark: "KAE",
@@ -45,7 +45,7 @@ const projects = [
     repository: "https://github.com/Oleksii1221/PIDron",
     website: "https://oleksii1221.github.io/PIDron/",
     description: "Калькулятор PID для дрона: вводиш характеристики збірки, отримуєш P/I/D/feedforward і за потреби прошиваєш їх у польотник без ручного налаштування.",
-    language: "PID calculator",
+    tags: ["Автор і розробник", "Windows", "Linux", "PID calculator", "Flight controller"],
     status: "В роботі",
     tone: "blue",
     mark: "PID",
@@ -56,7 +56,7 @@ const projects = [
     repository: "https://github.com/Oleksii1221/Ye-ruka",
     website: "https://oleksii1221.github.io/Ye-ruka/",
     description: "Застосунок для ESP32-роборуки: MediaPipe-жести з камери, сенсорна рукавиця, 7 сервоприводів, прошивання контролера й аварійна зупинка.",
-    language: "Robotics",
+    tags: ["Автор і розробник", "Windows", "Ubuntu", "ESP32", "Robotics"],
     status: "Завершено",
     tone: "red",
     mark: "ER",
@@ -66,7 +66,7 @@ const projects = [
     name: "MusicByKico",
     repository: "https://github.com/Oleksii1221/MusicByKico",
     description: "Discord-бот для програвання музики в голосових каналах: YouTube-посилання або пошук, плейлисти, черга, autoplay і slash-команди.",
-    language: "Discord bot",
+    tags: ["Автор і розробник", "Discord bot", "Voice channels", "YouTube"],
     status: "Завершено",
     tone: "yellow",
     mark: "MBK",
@@ -75,7 +75,7 @@ const projects = [
     name: "Thermometer",
     repository: "https://github.com/Oleksii1221/Thermometer-",
     description: "ESP32 + DS18B20 система моніторингу температури з Telegram-ботом для запитів, порогів і критичних сповіщень.",
-    language: "ESP32 / Telegram",
+    tags: ["Автор і розробник", "ESP32", "Telegram bot", "DS18B20"],
     status: "Завершено",
     tone: "green",
     mark: "TMP",
@@ -84,7 +84,7 @@ const projects = [
     name: "MEDUZA",
     repository: "https://github.com/Oleksii1221/MEDUZA",
     description: "Проєкт з ESP32, MPU6050 та ESP-NOW обміном: передавач/приймач для експериментів з рухом, сенсорами й керуванням пристроями.",
-    language: "ESP32 / MPU6050",
+    tags: ["Автор і розробник", "ESP32", "MPU6050", "ESP-NOW"],
     status: "Завершено",
     tone: "violet",
     mark: "MDZ",
@@ -93,7 +93,7 @@ const projects = [
     name: "ESP NOW Testing",
     repository: "https://github.com/Oleksii1221/ESP_NOW_TESTING",
     description: "Тестовий стенд Sender/Receiver для перевірки бездротового обміну між ESP-пристроями через ESP-NOW перед інтеграцією в більші проєкти.",
-    language: "ESP-NOW",
+    tags: ["Автор і розробник", "ESP32", "ESP-NOW", "Sender/Receiver"],
     status: "Завершено",
     tone: "teal",
     mark: "ESP",
@@ -102,7 +102,7 @@ const projects = [
     name: "Hodivnytsya",
     repository: "https://github.com/Oleksii1221/Hodivnytsya",
     description: "Arduino-годівниця для домашніх улюбленців: HC-SR04 визначає наближення, сервопривід відкриває заслонку, а схема показує підключення.",
-    language: "Arduino",
+    tags: ["Автор і розробник", "Arduino", "HC-SR04", "Servo"],
     status: "Завершено",
     tone: "orange",
     mark: "HDV",
@@ -133,8 +133,12 @@ for (const project of projects) {
   card.querySelector(".status").classList.toggle("is-active", project.status === "В роботі");
   card.querySelector("h3").textContent = project.name;
   card.querySelector(".project-description").textContent = project.description;
-  card.querySelector(".project-role").textContent = "Автор і розробник";
-  card.querySelector(".project-language").textContent = project.language;
+  const meta = card.querySelector(".project-meta");
+  for (const tag of project.tags) {
+    const tagElement = document.createElement("span");
+    tagElement.textContent = tag;
+    meta.appendChild(tagElement);
+  }
 
   if (project.website) {
     liveLink.hidden = false;
