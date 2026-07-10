@@ -194,17 +194,18 @@ h3 {
 
 .project-image {
   position: absolute;
-  right: 16px;
-  bottom: 18px;
+  right: 14px;
+  bottom: 16px;
+  left: 14px;
   z-index: 1;
-  width: min(76%, 240px);
-  height: min(68%, 150px);
-  padding: 10px;
+  width: calc(100% - 28px);
+  height: 156px;
+  padding: 0;
   border: 1px solid rgb(255 255 255 / 56%);
-  border-radius: 8px;
-  background: rgb(255 255 255 / 86%);
+  border-radius: 12px;
+  background: rgb(255 255 255 / 90%);
   box-shadow: 0 18px 34px rgb(13 20 34 / 22%);
-  object-fit: contain;
+  object-fit: cover;
   transition: transform 280ms ease;
 }
 
@@ -372,12 +373,16 @@ h3 {
   }
 
   .project-card {
-    min-height: 478px;
+    min-height: 510px;
   }
 
   .project-visual {
-    height: 190px;
-    flex-basis: 190px;
+    height: 222px;
+    flex-basis: 222px;
+  }
+
+  .project-image {
+    height: 162px;
   }
 
   .project-content {
@@ -400,12 +405,16 @@ h3 {
   }
 
   .project-card {
-    min-height: 448px;
+    min-height: 488px;
   }
 
   .project-visual {
-    height: 214px;
-    flex-basis: 214px;
+    height: 254px;
+    flex-basis: 254px;
+  }
+
+  .project-image {
+    height: 206px;
   }
 }
 

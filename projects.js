@@ -7,7 +7,8 @@ const projects = [
     status: "Завершено",
     tone: "violet",
     mark: "VZ",
-    image: "https://raw.githubusercontent.com/Oleksii1221/Vuzol_Pb/master/assets/hero-devices.png",
+    image: "assets/projects/vuzol.svg",
+    imageAlt: "Прев'ю Vuzol з 3D-моделлю на телефоні та ПК",
   },
   {
     name: "KEP Schedule",
@@ -17,6 +18,8 @@ const projects = [
     status: "Завершено",
     tone: "orange",
     mark: "KEP",
+    image: "assets/projects/kep-schedule.svg",
+    imageAlt: "Прев'ю KEP Schedule з Android APK, розкладом і Telegram-ботом",
   },
   {
     name: "Kokos",
@@ -27,7 +30,8 @@ const projects = [
     status: "В роботі",
     tone: "teal",
     mark: "K",
-    image: "https://raw.githubusercontent.com/Oleksii1221/Kokos/master/assets/kokoclip-logo.png",
+    image: "assets/projects/kokos.svg",
+    imageAlt: "Прев'ю Kokos з Telegram-чатом і відеовідповіддю",
   },
   {
     name: "KicoAudioEditor",
@@ -38,7 +42,8 @@ const projects = [
     status: "Завершено",
     tone: "pink",
     mark: "KAE",
-    image: "https://raw.githubusercontent.com/Oleksii1221/KicoAudioEditor/master/docs/assets/kae_mascot.png",
+    image: "assets/projects/kico-audio-editor.svg",
+    imageAlt: "Прев'ю KicoAudioEditor з аудіометаданими та хвилею",
   },
   {
     name: "PIDron",
@@ -49,7 +54,8 @@ const projects = [
     status: "В роботі",
     tone: "blue",
     mark: "PID",
-    image: "https://raw.githubusercontent.com/Oleksii1221/PIDron/master/assets/icon.png",
+    image: "assets/projects/pidron.svg",
+    imageAlt: "Прев'ю PIDron з дроном, PID-слайдерами і прошивкою",
   },
   {
     name: "Є-Рука",
@@ -60,7 +66,8 @@ const projects = [
     status: "Завершено",
     tone: "red",
     mark: "ER",
-    image: "https://raw.githubusercontent.com/Oleksii1221/Ye-ruka/master/docs/INTERFACE_PREVIEW.png",
+    image: "assets/projects/ye-ruka.svg",
+    imageAlt: "Прев'ю Є-Рука з жестами, рукавицею і ESP32-рукою",
   },
   {
     name: "MusicByKico",
@@ -70,6 +77,8 @@ const projects = [
     status: "Завершено",
     tone: "yellow",
     mark: "MBK",
+    image: "assets/projects/musicbykico.svg",
+    imageAlt: "Прев'ю MusicByKico з Discord voice channel і музичною чергою",
   },
   {
     name: "Thermometer",
@@ -79,6 +88,8 @@ const projects = [
     status: "Завершено",
     tone: "green",
     mark: "TMP",
+    image: "assets/projects/thermometer.svg",
+    imageAlt: "Прев'ю Thermometer з ESP32, датчиком температури і Telegram-сповіщенням",
   },
   {
     name: "MEDUZA",
@@ -88,6 +99,8 @@ const projects = [
     status: "Завершено",
     tone: "violet",
     mark: "MDZ",
+    image: "assets/projects/meduza.svg",
+    imageAlt: "Прев'ю MEDUZA з MPU6050, ESP32 і ESP-NOW зв'язком",
   },
   {
     name: "ESP NOW Testing",
@@ -97,6 +110,8 @@ const projects = [
     status: "Завершено",
     tone: "teal",
     mark: "ESP",
+    image: "assets/projects/esp-now-testing.svg",
+    imageAlt: "Прев'ю ESP NOW Testing з Sender і Receiver стендом",
   },
   {
     name: "Hodivnytsya",
@@ -106,7 +121,8 @@ const projects = [
     status: "Завершено",
     tone: "orange",
     mark: "HDV",
-    image: "https://raw.githubusercontent.com/Oleksii1221/Hodivnytsya/master/Connection%20diagram.png",
+    image: "assets/projects/hodivnytsya.svg",
+    imageAlt: "Прев'ю Hodivnytsya з Arduino-годівницею, сенсором і сервоприводом",
   },
 ];
 
@@ -126,7 +142,7 @@ for (const project of projects) {
   repositoryLink.href = project.repository;
   repositoryLink.setAttribute("aria-label", `Відкрити репозиторій ${project.name}`);
   image.src = project.image || `https://opengraph.githubassets.com/portfolio-card/Oleksii1221/${project.repository.split("/").pop()}`;
-  image.alt = `Прев'ю проєкту ${project.name}`;
+  image.alt = project.imageAlt || `Прев'ю проєкту ${project.name}`;
   image.addEventListener("error", () => image.classList.add("image-unavailable"), { once: true });
   mark.textContent = project.mark || project.name.slice(0, 3).toUpperCase();
   card.querySelector(".status").textContent = project.status;

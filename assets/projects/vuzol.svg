@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">Vuzol 3D viewer preview</title>
+  <desc id="desc">Laptop and phone showing a simple 3D model viewer for production instructions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#db2777"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="34" fill="url(#bg)"/>
+  <circle cx="606" cy="78" r="96" fill="#fff" opacity=".16"/>
+  <circle cx="94" cy="384" r="122" fill="#111827" opacity=".16"/>
+  <rect x="92" y="100" width="396" height="246" rx="22" fill="#111827"/>
+  <rect x="116" y="128" width="348" height="174" rx="14" fill="#f8fafc"/>
+  <rect x="170" y="326" width="240" height="18" rx="9" fill="#374151"/>
+  <rect x="446" y="154" width="112" height="192" rx="24" fill="#0f172a"/>
+  <rect x="460" y="180" width="84" height="132" rx="12" fill="#f8fafc"/>
+  <path d="M290 164l78 42v88l-78 44-78-44v-88z" fill="none" stroke="#8b5cf6" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M212 206l78 42 78-42M290 248v90" fill="none" stroke="#db2777" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M482 218h38M482 244h48M482 270h28" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round"/>
+  <text x="92" y="70" fill="#fff" font-family="Arial, sans-serif" font-size="38" font-weight="800">Vuzol</text>
+  <text x="94" y="386" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="700">3D models for clear instructions</text>
+</svg>

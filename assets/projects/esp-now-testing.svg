@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">ESP NOW Testing preview</title>
+  <desc id="desc">Sender and receiver boards exchanging packets in a wireless test bench.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="34" fill="url(#bg)"/>
+  <rect x="86" y="156" width="190" height="140" rx="26" fill="#ecfeff"/>
+  <rect x="444" y="156" width="190" height="140" rx="26" fill="#eff6ff"/>
+  <text x="120" y="218" fill="#0f766e" font-family="Arial, sans-serif" font-size="28" font-weight="800">Sender</text>
+  <text x="474" y="218" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="28" font-weight="800">Receiver</text>
+  <path d="M300 176h34M300 226h34M300 276h34M386 176h34M386 226h34M386 276h34" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+  <path d="M330 176c18-26 38-26 56 0M330 226c18-26 38-26 56 0M330 276c18-26 38-26 56 0" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity=".68"/>
+  <rect x="140" y="260" width="84" height="16" rx="8" fill="#14b8a6"/>
+  <rect x="498" y="260" width="84" height="16" rx="8" fill="#2563eb"/>
+  <text x="88" y="420" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="800">Wireless packet test bench</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">Kokos Telegram bot preview</title>
+  <desc id="desc">Chat bot transforms short video links into native video replies.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="34" fill="url(#bg)"/>
+  <rect x="78" y="72" width="280" height="316" rx="30" fill="#0f172a"/>
+  <rect x="104" y="112" width="228" height="230" rx="18" fill="#eff6ff"/>
+  <rect x="126" y="138" width="148" height="34" rx="17" fill="#dbeafe"/>
+  <rect x="186" y="190" width="124" height="34" rx="17" fill="#14b8a6"/>
+  <rect x="126" y="242" width="178" height="64" rx="18" fill="#fff"/>
+  <path d="M160 274l28-18v36z" fill="#2563eb"/>
+  <rect x="420" y="104" width="188" height="236" rx="30" fill="#fff"/>
+  <circle cx="514" cy="190" r="54" fill="#14b8a6" opacity=".18"/>
+  <path d="M494 162l70 38-70 38z" fill="#2563eb"/>
+  <path d="M386 218c34 0 34-54 68-54M386 260c48 0 48 48 96 48" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" opacity=".78"/>
+  <text x="80" y="420" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="800">TikTok / Shorts to native replies</text>
+</svg>

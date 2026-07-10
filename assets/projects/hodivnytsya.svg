@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">Hodivnytsya Arduino feeder preview</title>
+  <desc id="desc">Arduino feeder with ultrasonic sensor, servo gate, and food bowl.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#be123c"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="34" fill="url(#bg)"/>
+  <rect x="94" y="116" width="196" height="140" rx="26" fill="#fff7ed"/>
+  <circle cx="154" cy="180" r="24" fill="#f97316"/>
+  <circle cx="230" cy="180" r="24" fill="#f97316"/>
+  <path d="M322 186h146" stroke="#fff" stroke-width="12" stroke-dasharray="18 18" opacity=".72"/>
+  <rect x="486" y="106" width="112" height="172" rx="24" fill="#111827"/>
+  <rect x="512" y="136" width="60" height="76" rx="14" fill="#fed7aa"/>
+  <path d="M542 212v54" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+  <path d="M410 328c70 42 168 42 238 0" fill="none" stroke="#fff" stroke-width="32" stroke-linecap="round"/>
+  <circle cx="486" cy="318" r="14" fill="#fbbf24"/>
+  <circle cx="524" cy="332" r="14" fill="#fbbf24"/>
+  <circle cx="566" cy="318" r="14" fill="#fbbf24"/>
+  <text x="94" y="420" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="800">Arduino feeder: sensor + servo</text>
+</svg>

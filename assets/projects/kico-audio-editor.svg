@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">KicoAudioEditor desktop app preview</title>
+  <desc id="desc">Desktop window with audio metadata fields, cover art, and waveform preview.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ec4899"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="34" fill="url(#bg)"/>
+  <rect x="86" y="86" width="548" height="300" rx="26" fill="#101827"/>
+  <rect x="86" y="86" width="548" height="46" rx="26" fill="#1f2937"/>
+  <circle cx="122" cy="110" r="7" fill="#fb7185"/>
+  <circle cx="148" cy="110" r="7" fill="#fbbf24"/>
+  <circle cx="174" cy="110" r="7" fill="#34d399"/>
+  <rect x="124" y="166" width="134" height="134" rx="20" fill="#fdf2f8"/>
+  <path d="M174 244c32-72 70-48 48 0" fill="none" stroke="#ec4899" stroke-width="10" stroke-linecap="round"/>
+  <rect x="292" y="166" width="260" height="26" rx="13" fill="#fff" opacity=".88"/>
+  <rect x="292" y="210" width="210" height="22" rx="11" fill="#fff" opacity=".55"/>
+  <rect x="292" y="252" width="250" height="58" rx="18" fill="#fff" opacity=".12"/>
+  <path d="M316 282h26l12-18 24 38 20-54 30 34h86" stroke="#f9a8d4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="88" y="424" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="800">Audio metadata, covers, batch edits</text>
+</svg>
