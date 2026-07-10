@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Oleksii Medvid portfolio preview</title>
+  <desc id="desc">Light editorial preview for a portfolio of apps, bots and embedded tools.</desc>
+  <rect width="1200" height="630" fill="#f5f7fb"/>
+  <path d="M0 502H1200V630H0Z" fill="#19202d"/>
+  <path d="M0 0H1200V86H0Z" fill="#ffffff"/>
+  <path d="M76 86H210L88 502H0V300Z" fill="#8b5cf6" opacity=".92"/>
+  <path d="M984 86H1200V344L1118 502H920Z" fill="#14b8a6" opacity=".88"/>
+  <path d="M0 480H1200" stroke="#dbe1ea" stroke-width="2"/>
+  <path d="M160 148H1040" stroke="#dbe1ea" stroke-width="2"/>
+  <text x="160" y="210" fill="#e44e37" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="5">PORTFOLIO 2026</text>
+  <text x="160" y="315" fill="#19202d" font-family="Arial, sans-serif" font-size="86" font-weight="700">Oleksii Medvid</text>
+  <text x="164" y="374" fill="#536073" font-family="Arial, sans-serif" font-size="34" font-weight="600">Apps · Bots · Embedded tools · Product ecosystems</text>
+  <g transform="translate(160 430)">
+    <rect width="146" height="44" rx="0" fill="#ffffff" stroke="#dbe1ea"/>
+    <text x="18" y="29" fill="#19202d" font-family="Arial, sans-serif" font-size="18" font-weight="700">Windows</text>
+    <rect x="164" width="118" height="44" rx="0" fill="#ffffff" stroke="#dbe1ea"/>
+    <text x="182" y="29" fill="#19202d" font-family="Arial, sans-serif" font-size="18" font-weight="700">Linux</text>
+    <rect x="300" width="166" height="44" rx="0" fill="#ffffff" stroke="#dbe1ea"/>
+    <text x="318" y="29" fill="#19202d" font-family="Arial, sans-serif" font-size="18" font-weight="700">Android APK</text>
+    <rect x="484" width="154" height="44" rx="0" fill="#ffffff" stroke="#dbe1ea"/>
+    <text x="502" y="29" fill="#19202d" font-family="Arial, sans-serif" font-size="18" font-weight="700">ESP32</text>
+  </g>
+  <text x="160" y="560" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="700">github.com/Oleksii1221</text>
+  <text x="1005" y="560" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="700">11 projects</text>
+</svg>

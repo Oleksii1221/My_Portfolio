@@ -1,5 +1,7 @@
 # Oleksii Portfolio
 
-Static GitHub Pages portfolio for [Oleksii1221](https://github.com/Oleksii1221).
+Static GitHub Pages portfolio for [Oleksii1221](https://github.com/Oleksii1221):
+[oleksii1221.github.io/My_Portfolio](https://oleksii1221.github.io/My_Portfolio/).
 
-Project cards are configured in `projects.js`. Each card opens its GitHub repository; projects with a published site also show a separate website link.
+The page presents public projects as apps, bots, embedded tools, Android/APK workflows, and product ecosystems.
+Project cards are configured in `projects.js`; each card opens its GitHub repository, and projects with a public page also show a separate project link.
