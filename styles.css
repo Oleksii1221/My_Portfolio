@@ -160,6 +160,7 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: 1; }
 .project-image { width: 100%; height: 100%; object-fit: contain; transition: transform 280ms ease; }
 .project-card:hover .project-image { transform: scale(1.035); }
 .project-image.image-unavailable { display: none; }
+.is-github-preview .project-image { mix-blend-mode: multiply; }
 
 .visual-shade {
   position: absolute;

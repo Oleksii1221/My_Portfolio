@@ -6,6 +6,7 @@ const projects = [
     language: "HTML",
     status: "Завершено",
     tone: "violet",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Vuzol_Pb/master/assets/windows-workspace.png",
   },
   {
     name: "KEP Schedule",
@@ -23,6 +24,7 @@ const projects = [
     language: "Python",
     status: "В роботі",
     tone: "teal",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Kokos/master/assets/kokoclip-logo.png",
   },
   {
     name: "KicoAudioEditor",
@@ -32,6 +34,7 @@ const projects = [
     language: "Python",
     status: "Завершено",
     tone: "pink",
+    image: "https://raw.githubusercontent.com/Oleksii1221/KicoAudioEditor/master/docs/assets/kae_mascot.png",
   },
   {
     name: "PIDron",
@@ -41,6 +44,7 @@ const projects = [
     language: "JavaScript",
     status: "В роботі",
     tone: "blue",
+    image: "https://raw.githubusercontent.com/Oleksii1221/PIDron/master/assets/icon.png",
   },
   {
     name: "Є-Рука",
@@ -91,6 +95,7 @@ const projects = [
     language: "C++",
     status: "Завершено",
     tone: "orange",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Hodivnytsya/main/Connection%20diagram.png",
   },
 ];
 
@@ -106,6 +111,7 @@ for (const project of projects) {
   const liveLink = card.querySelector(".live-link");
 
   article.classList.add(`tone-${project.tone}`);
+  article.classList.toggle("is-github-preview", !project.image);
   repositoryLink.href = project.repository;
   repositoryLink.setAttribute("aria-label", `Відкрити репозиторій ${project.name}`);
   image.src = project.image || `https://opengraph.githubassets.com/portfolio-card/Oleksii1221/${project.repository.split("/").pop()}`;
