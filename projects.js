@@ -7,7 +7,7 @@ const projects = [
     status: "Завершено",
     tone: "violet",
     mark: "VZ",
-    image: "assets/projects/vuzol.svg",
+    image: "assets/projects/vuzol-photo.webp",
     imageAlt: "Прев'ю Vuzol з 3D-моделлю на телефоні та ПК",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     status: "Завершено",
     tone: "orange",
     mark: "KEP",
-    image: "assets/projects/kep-schedule.svg",
+    image: "assets/projects/kep-schedule-photo.webp",
     imageAlt: "Прев'ю KEP Schedule з Android APK, розкладом і Telegram-ботом",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     status: "В роботі",
     tone: "teal",
     mark: "K",
-    image: "assets/projects/kokos.svg",
+    image: "assets/projects/kokos-photo.webp",
     imageAlt: "Прев'ю Kokos з Telegram-чатом і відеовідповіддю",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     status: "Завершено",
     tone: "pink",
     mark: "KAE",
-    image: "assets/projects/kico-audio-editor.svg",
+    image: "assets/projects/kico-audio-editor-photo.webp",
     imageAlt: "Прев'ю KicoAudioEditor з аудіометаданими та хвилею",
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     status: "В роботі",
     tone: "blue",
     mark: "PID",
-    image: "assets/projects/pidron.svg",
+    image: "assets/projects/pidron-photo.webp",
     imageAlt: "Прев'ю PIDron з дроном, PID-слайдерами і прошивкою",
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     status: "Завершено",
     tone: "red",
     mark: "ER",
-    image: "assets/projects/ye-ruka.svg",
+    image: "assets/projects/ye-ruka-photo.webp",
     imageAlt: "Прев'ю Є-Рука з жестами, рукавицею і ESP32-рукою",
   },
   {
@@ -77,7 +77,7 @@ const projects = [
     status: "Завершено",
     tone: "yellow",
     mark: "MBK",
-    image: "assets/projects/musicbykico.svg",
+    image: "assets/projects/musicbykico-photo.webp",
     imageAlt: "Прев'ю MusicByKico з Discord voice channel і музичною чергою",
   },
   {
@@ -88,7 +88,7 @@ const projects = [
     status: "Завершено",
     tone: "green",
     mark: "TMP",
-    image: "assets/projects/thermometer.svg",
+    image: "assets/projects/thermometer-photo.webp",
     imageAlt: "Прев'ю Thermometer з ESP32, датчиком температури і Telegram-сповіщенням",
   },
   {
@@ -99,7 +99,7 @@ const projects = [
     status: "Завершено",
     tone: "violet",
     mark: "MDZ",
-    image: "assets/projects/meduza.svg",
+    image: "assets/projects/meduza-photo.webp",
     imageAlt: "Прев'ю MEDUZA з MPU6050, ESP32 і ESP-NOW зв'язком",
   },
   {
@@ -110,7 +110,7 @@ const projects = [
     status: "Завершено",
     tone: "teal",
     mark: "ESP",
-    image: "assets/projects/esp-now-testing.svg",
+    image: "assets/projects/esp-now-testing-photo.webp",
     imageAlt: "Прев'ю ESP NOW Testing з Sender і Receiver стендом",
   },
   {
@@ -121,7 +121,7 @@ const projects = [
     status: "Завершено",
     tone: "orange",
     mark: "HDV",
-    image: "assets/projects/hodivnytsya.svg",
+    image: "assets/projects/hodivnytsya-photo.webp",
     imageAlt: "Прев'ю Hodivnytsya з Arduino-годівницею, сенсором і сервоприводом",
   },
 ];
