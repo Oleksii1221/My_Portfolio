@@ -2,8 +2,8 @@ const projects = [
   {
     name: "Vuzol",
     repository: "https://github.com/Oleksii1221/Vuzol_Pb",
-    description: "Інструмент для роботи з вузлами, схемами та візуальними матеріалами проєкту.",
-    language: "HTML",
+    description: "Екосистема для телефону та ПК, де можна переглядати 3D-моделі через простий інструмент замість громіздких інструкцій. Підходить для виробництва, навчання, сервісу й показу збірок.",
+    language: "3D / Mobile / PC",
     status: "Завершено",
     tone: "violet",
     mark: "VZ",
@@ -12,8 +12,8 @@ const projects = [
   {
     name: "KEP Schedule",
     repository: "https://github.com/Oleksii1221/KEP_Schedule_PB",
-    description: "Екосистема для зручного перегляду розкладу Коледжу електронних приладів: APK, Telegram-бот і канали оновлень.",
-    language: "HTML",
+    description: "Екосистема для розкладу Коледжу електронних приладів: Android APK, Telegram-бот, канали оновлень і зручний доступ для студентів без ручного пошуку пар.",
+    language: "APK / Telegram",
     status: "Завершено",
     tone: "orange",
     mark: "KEP",
@@ -22,8 +22,8 @@ const projects = [
     name: "Kokos",
     repository: "https://github.com/Oleksii1221/Kokos",
     website: "https://oleksii1221.github.io/Kokos/",
-    description: "Telegram-бот для чатів, що перетворює TikTok і YouTube Shorts на нативні відеовідповіді.",
-    language: "Python",
+    description: "Telegram-бот для чатів, який приймає TikTok або YouTube Shorts і повертає їх як нативні відеовідповіді прямо в діалозі.",
+    language: "Telegram bot",
     status: "В роботі",
     tone: "teal",
     mark: "K",
@@ -33,8 +33,8 @@ const projects = [
     name: "KicoAudioEditor",
     repository: "https://github.com/Oleksii1221/KicoAudioEditor",
     website: "https://oleksii1221.github.io/KicoAudioEditor/",
-    description: "Desktop-застосунок для редагування аудіометаданих на Windows і Linux.",
-    language: "Python",
+    description: "Нативний desktop-редактор для аудіометаданих: швидке впорядкування треків, тегів і назв на Windows та Linux.",
+    language: "Desktop app",
     status: "Завершено",
     tone: "pink",
     mark: "KAE",
@@ -44,8 +44,8 @@ const projects = [
     name: "PIDron",
     repository: "https://github.com/Oleksii1221/PIDron",
     website: "https://oleksii1221.github.io/PIDron/",
-    description: "Локальна станція для симуляції дронів, роботи з Betaflight/INAV та налаштування PID.",
-    language: "JavaScript",
+    description: "Локальна робоча станція для симуляції дронів і PID-тюнінгу в Betaflight, INAV та ArduPilot без зайвих онлайн-сервісів.",
+    language: "Simulator",
     status: "В роботі",
     tone: "blue",
     mark: "PID",
@@ -55,8 +55,8 @@ const projects = [
     name: "Є-Рука",
     repository: "https://github.com/Oleksii1221/Ye-ruka",
     website: "https://oleksii1221.github.io/Ye-ruka/",
-    description: "Застосунок для керування роботизованою кистю через камеру, жести, рукавицю та ESP32.",
-    language: "Python",
+    description: "Windows-застосунок для керування ESP32-роборукою через жести з камери, рукавицю, прошивання контролера та локальні режими керування.",
+    language: "Robotics",
     status: "Завершено",
     tone: "red",
     mark: "ER",
@@ -65,8 +65,8 @@ const projects = [
   {
     name: "MusicByKico",
     repository: "https://github.com/Oleksii1221/MusicByKico",
-    description: "Персональний музичний проєкт з інструментами для організації та обробки звуку.",
-    language: "Python",
+    description: "Discord-бот для музики з YouTube: плейлисти, автопродовження, черга, пауза, skip і керування через slash-команди.",
+    language: "Discord bot",
     status: "Завершено",
     tone: "yellow",
     mark: "MBK",
@@ -74,8 +74,8 @@ const projects = [
   {
     name: "Thermometer",
     repository: "https://github.com/Oleksii1221/Thermometer-",
-    description: "Апаратно-програмний проєкт для вимірювання, обробки та відображення температури.",
-    language: "Python",
+    description: "ESP32 + DS18B20 система моніторингу температури з Telegram-ботом для запитів, порогів і критичних сповіщень.",
+    language: "ESP32 / Telegram",
     status: "Завершено",
     tone: "green",
     mark: "TMP",
@@ -83,8 +83,8 @@ const projects = [
   {
     name: "MEDUZA",
     repository: "https://github.com/Oleksii1221/MEDUZA",
-    description: "C++ проєкт з прикладною логікою, керуванням станами та взаємодією з пристроями.",
-    language: "C++",
+    description: "Проєкт з ESP32, MPU6050 та ESP-NOW обміном: передавач/приймач для експериментів з рухом, сенсорами й керуванням пристроями.",
+    language: "ESP32 / MPU6050",
     status: "Завершено",
     tone: "violet",
     mark: "MDZ",
@@ -92,8 +92,8 @@ const projects = [
   {
     name: "ESP NOW Testing",
     repository: "https://github.com/Oleksii1221/ESP_NOW_TESTING",
-    description: "Тестовий стенд для бездротового обміну даними між ESP-пристроями через ESP-NOW.",
-    language: "Embedded",
+    description: "Тестовий стенд Sender/Receiver для перевірки бездротового обміну між ESP-пристроями через ESP-NOW перед інтеграцією в більші проєкти.",
+    language: "ESP-NOW",
     status: "Завершено",
     tone: "teal",
     mark: "ESP",
@@ -101,8 +101,8 @@ const projects = [
   {
     name: "Hodivnytsya",
     repository: "https://github.com/Oleksii1221/Hodivnytsya",
-    description: "Проєкт автоматизованої годівниці з C++ логікою, електронікою та схемою підключення.",
-    language: "C++",
+    description: "Arduino-годівниця для домашніх улюбленців: HC-SR04 визначає наближення, сервопривід відкриває заслонку, а схема показує підключення.",
+    language: "Arduino",
     status: "Завершено",
     tone: "orange",
     mark: "HDV",
@@ -139,7 +139,7 @@ for (const project of projects) {
   if (project.website) {
     liveLink.hidden = false;
     liveLink.href = project.website;
-    liveLink.setAttribute("aria-label", `Відкрити сайт проєкту ${project.name}`);
+    liveLink.setAttribute("aria-label", `Відкрити сторінку проєкту ${project.name}`);
   }
 
   grid.appendChild(card);

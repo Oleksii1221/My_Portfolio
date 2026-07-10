@@ -29,21 +29,8 @@ a { color: inherit; }
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   min-height: 84px;
-}
-
-.brand {
-  display: grid;
-  width: 40px;
-  height: 40px;
-  place-items: center;
-  border: 2px solid var(--ink);
-  background: var(--surface);
-  color: var(--ink);
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 .github-link, .site-footer a {
