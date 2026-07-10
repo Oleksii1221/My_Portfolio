@@ -5,7 +5,6 @@ const projects = [
     description: "Публічний сайт для інструмента роботи з вузлами та схемами.",
     language: "HTML",
     status: "Завершено",
-    tone: "violet",
   },
   {
     name: "KEP Schedule",
@@ -13,7 +12,6 @@ const projects = [
     description: "Сайт розкладу з окремими каналами завантажень для студентського застосунку.",
     language: "HTML",
     status: "Завершено",
-    tone: "orange",
   },
   {
     name: "Kokos",
@@ -22,7 +20,6 @@ const projects = [
     description: "Telegram-бот, що перетворює TikTok і YouTube Shorts на нативні відеовідповіді.",
     language: "Python",
     status: "В роботі",
-    tone: "teal",
   },
   {
     name: "KicoAudioEditor",
@@ -31,7 +28,6 @@ const projects = [
     description: "Нативний редактор метаданих аудіо для Windows і Linux.",
     language: "Python",
     status: "Завершено",
-    tone: "pink",
   },
   {
     name: "PIDron",
@@ -40,7 +36,6 @@ const projects = [
     description: "Локальна desktop-станція для симуляції дронів та налаштування PID.",
     language: "JavaScript",
     status: "В роботі",
-    tone: "blue",
   },
   {
     name: "Є-Рука",
@@ -49,7 +44,6 @@ const projects = [
     description: "Застосунок для керування роботизованою кистю через камеру, жести, рукавицю та ESP32.",
     language: "Python",
     status: "Завершено",
-    tone: "red",
     image: "https://raw.githubusercontent.com/Oleksii1221/Ye-ruka/master/docs/INTERFACE_PREVIEW.png",
   },
   {
@@ -58,7 +52,6 @@ const projects = [
     description: "Персональний музичний проєкт та інструменти для роботи зі звуком.",
     language: "Python",
     status: "Завершено",
-    tone: "yellow",
   },
   {
     name: "Thermometer",
@@ -66,7 +59,6 @@ const projects = [
     description: "Проєкт для вимірювання та відображення температурних даних.",
     language: "Python",
     status: "Завершено",
-    tone: "green",
   },
   {
     name: "MEDUZA",
@@ -74,7 +66,6 @@ const projects = [
     description: "C++ проєкт із власною логікою та взаємодією з пристроями.",
     language: "C++",
     status: "Завершено",
-    tone: "violet",
   },
   {
     name: "ESP NOW Testing",
@@ -82,7 +73,6 @@ const projects = [
     description: "Експерименти з бездротовим обміном між ESP-пристроями через ESP-NOW.",
     language: "Embedded",
     status: "Завершено",
-    tone: "teal",
   },
   {
     name: "Hodivnytsya",
@@ -90,13 +80,26 @@ const projects = [
     description: "C++ проєкт із власною прикладною логікою та інтерфейсом.",
     language: "C++",
     status: "Завершено",
-    tone: "orange",
   },
 ];
 
 const grid = document.querySelector("#projects");
 const template = document.querySelector("#project-template");
 document.querySelector("#project-count").textContent = `${projects.length} проєктів`;
+
+const themeButtons = document.querySelectorAll("[data-theme-value]");
+const setTheme = (theme) => {
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem("portfolio-theme", theme);
+  themeButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.dataset.themeValue === theme));
+  });
+};
+
+themeButtons.forEach((button) => {
+  button.addEventListener("click", () => setTheme(button.dataset.themeValue));
+});
+setTheme(document.documentElement.dataset.theme);
 
 for (const project of projects) {
   const card = template.content.cloneNode(true);
@@ -105,7 +108,6 @@ for (const project of projects) {
   const image = card.querySelector(".project-image");
   const liveLink = card.querySelector(".live-link");
 
-  article.classList.add(`tone-${project.tone}`);
   repositoryLink.href = project.repository;
   repositoryLink.setAttribute("aria-label", `Відкрити репозиторій ${project.name}`);
   image.src = project.image || `https://opengraph.githubassets.com/portfolio-card/Oleksii1221/${project.repository.split("/").pop()}`;

@@ -14,15 +14,25 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      document.documentElement.dataset.theme = savedTheme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="На початок сторінки">OM</a>
-      <a class="github-link" href="https://github.com/Oleksii1221" target="_blank" rel="noreferrer">
-        GitHub
-        <span aria-hidden="true">↗</span>
-      </a>
+      <div class="header-actions">
+        <div class="theme-switch" role="group" aria-label="Тема сайту">
+          <button type="button" data-theme-value="light" aria-pressed="false">Світла</button>
+          <button type="button" data-theme-value="dark" aria-pressed="false">Темна</button>
+        </div>
+        <a class="github-link" href="https://github.com/Oleksii1221" target="_blank" rel="noreferrer">
+          GitHub
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
     </header>
 
     <main id="top">
