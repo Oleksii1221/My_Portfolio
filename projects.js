@@ -7,7 +7,7 @@ const projects = [
     status: "Завершено",
     tone: "violet",
     mark: "VZ",
-    image: "assets/projects/vuzol-photo.webp",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Vuzol_Pb/master/assets/hero-devices.png",
     imageAlt: "Прев'ю Vuzol з 3D-моделлю на телефоні та ПК",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     status: "Завершено",
     tone: "orange",
     mark: "KEP",
-    image: "assets/projects/kep-schedule-photo.webp",
+    image: "https://raw.githubusercontent.com/Oleksii1221/KEP_Schedule_PB/master/icons/icon.svg",
     imageAlt: "Прев'ю KEP Schedule з Android APK, розкладом і Telegram-ботом",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     status: "В роботі",
     tone: "teal",
     mark: "K",
-    image: "assets/projects/kokos-photo.webp",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Kokos/master/assets/kokoclip-logo.png",
     imageAlt: "Прев'ю Kokos з Telegram-чатом і відеовідповіддю",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     status: "Завершено",
     tone: "pink",
     mark: "KAE",
-    image: "assets/projects/kico-audio-editor-photo.webp",
+    image: "https://raw.githubusercontent.com/Oleksii1221/KicoAudioEditor/master/docs/assets/kae_mascot.png",
     imageAlt: "Прев'ю KicoAudioEditor з аудіометаданими та хвилею",
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     status: "В роботі",
     tone: "blue",
     mark: "PID",
-    image: "assets/projects/pidron-photo.webp",
+    image: "https://raw.githubusercontent.com/Oleksii1221/PIDron/master/assets/icon.png",
     imageAlt: "Прев'ю PIDron з дроном, PID-слайдерами і прошивкою",
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     status: "Завершено",
     tone: "red",
     mark: "ER",
-    image: "assets/projects/ye-ruka-photo.webp",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Ye-ruka/master/docs/INTERFACE_PREVIEW.png",
     imageAlt: "Прев'ю Є-Рука з жестами, рукавицею і ESP32-рукою",
   },
   {
@@ -77,8 +77,6 @@ const projects = [
     status: "Завершено",
     tone: "yellow",
     mark: "MBK",
-    image: "assets/projects/musicbykico-photo.webp",
-    imageAlt: "Прев'ю MusicByKico з Discord voice channel і музичною чергою",
   },
   {
     name: "Thermometer",
@@ -88,8 +86,6 @@ const projects = [
     status: "Завершено",
     tone: "green",
     mark: "TMP",
-    image: "assets/projects/thermometer-photo.webp",
-    imageAlt: "Прев'ю Thermometer з ESP32, датчиком температури і Telegram-сповіщенням",
   },
   {
     name: "MEDUZA",
@@ -99,8 +95,6 @@ const projects = [
     status: "Завершено",
     tone: "violet",
     mark: "MDZ",
-    image: "assets/projects/meduza-photo.webp",
-    imageAlt: "Прев'ю MEDUZA з MPU6050, ESP32 і ESP-NOW зв'язком",
   },
   {
     name: "ESP NOW Testing",
@@ -110,8 +104,6 @@ const projects = [
     status: "Завершено",
     tone: "teal",
     mark: "ESP",
-    image: "assets/projects/esp-now-testing-photo.webp",
-    imageAlt: "Прев'ю ESP NOW Testing з Sender і Receiver стендом",
   },
   {
     name: "Hodivnytsya",
@@ -121,7 +113,7 @@ const projects = [
     status: "Завершено",
     tone: "orange",
     mark: "HDV",
-    image: "assets/projects/hodivnytsya-photo.webp",
+    image: "https://raw.githubusercontent.com/Oleksii1221/Hodivnytsya/main/Connection%20diagram.png",
     imageAlt: "Прев'ю Hodivnytsya з Arduino-годівницею, сенсором і сервоприводом",
   },
 ];
@@ -141,7 +133,7 @@ for (const project of projects) {
   article.classList.add(`tone-${project.tone}`);
   repositoryLink.href = project.repository;
   repositoryLink.setAttribute("aria-label", `Відкрити репозиторій ${project.name}`);
-  image.src = project.image || `https://opengraph.githubassets.com/portfolio-card/Oleksii1221/${project.repository.split("/").pop()}`;
+  image.src = project.image || `https://opengraph.githubassets.com/portfolio-real/Oleksii1221/${project.repository.split("/").pop()}`;
   image.alt = project.imageAlt || `Прев'ю проєкту ${project.name}`;
   image.addEventListener("error", () => image.classList.add("image-unavailable"), { once: true });
   mark.textContent = project.mark || project.name.slice(0, 3).toUpperCase();
