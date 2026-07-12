@@ -259,6 +259,11 @@ h3 {
   color: #1e3a8a;
 }
 
+.status.is-paused {
+  background: #e5e7eb;
+  color: #374151;
+}
+
 .project-content {
   display: flex;
   flex: 1;

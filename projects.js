@@ -79,6 +79,18 @@ const projects = [
     mark: "MBK",
   },
   {
+    name: "PAPUGA",
+    repository: "https://github.com/Oleksii1221/PAPUGA",
+    website: "https://oleksii1221.github.io/PAPUGA/",
+    description: "Відкладений прототип двоосьової турелі: ESP32/Arduino-скетч читає ELRS/CRSF канали й керує двома stepper-осями для pan/tilt механіки.",
+    tags: ["Автор і розробник", "ESP32/Arduino", "ELRS/CRSF", "Stepper motors", "3D-print mechanics"],
+    status: "Відкладено",
+    tone: "red",
+    mark: "PAP",
+    image: "https://raw.githubusercontent.com/Oleksii1221/PAPUGA/master/docs/images/papuga-main.png",
+    imageAlt: "Прев'ю PAPUGA з прототипом двоосьової турелі",
+  },
+  {
     name: "Thermometer",
     repository: "https://github.com/Oleksii1221/Thermometer-",
     description: "ESP32 + DS18B20 система моніторингу температури з Telegram-ботом для запитів, порогів і критичних сповіщень.",
@@ -140,6 +152,7 @@ for (const project of projects) {
   card.querySelector(".status").textContent = project.status;
   card.querySelector(".status").classList.toggle("is-active", project.status === "В роботі");
   card.querySelector(".status").classList.toggle("is-testing", project.status === "В тестуванні");
+  card.querySelector(".status").classList.toggle("is-paused", project.status === "Відкладено");
   card.querySelector("h3").textContent = project.name;
   card.querySelector(".project-description").textContent = project.description;
   const meta = card.querySelector(".project-meta");
