@@ -254,6 +254,11 @@ h3 {
   color: #5b3b00;
 }
 
+.status.is-testing {
+  background: #bfdbfe;
+  color: #1e3a8a;
+}
+
 .project-content {
   display: flex;
   flex: 1;

@@ -4,7 +4,7 @@ const projects = [
     repository: "https://github.com/Oleksii1221/Vuzol_Pb",
     description: "Екосистема для телефону та ПК, де можна переглядати 3D-моделі через простий інструмент замість громіздких інструкцій. Підходить для виробництва, навчання, сервісу й показу збірок.",
     tags: ["Автор і розробник", "Phone + PC", "3D viewer", "Production"],
-    status: "Завершено",
+    status: "В роботі",
     tone: "violet",
     mark: "VZ",
     image: "https://raw.githubusercontent.com/Oleksii1221/Vuzol_Pb/master/assets/hero-devices.png",
@@ -15,7 +15,7 @@ const projects = [
     repository: "https://github.com/Oleksii1221/KEP_Schedule_PB",
     description: "Екосистема для розкладу Коледжу електронних приладів: Android APK, Telegram-бот, канали оновлень і зручний доступ для студентів без ручного пошуку пар.",
     tags: ["Автор і розробник", "Android APK", "Telegram bot", "College schedule"],
-    status: "Завершено",
+    status: "В роботі",
     tone: "orange",
     mark: "KEP",
     image: "https://raw.githubusercontent.com/Oleksii1221/KEP_Schedule_PB/master/icons/icon.svg",
@@ -27,7 +27,7 @@ const projects = [
     website: "https://oleksii1221.github.io/Kokos/",
     description: "Self-hosted Telegram-бот для чатів: знаходить TikTok і YouTube Shorts, завантажує відео через yt-dlp/ffmpeg, кешує file_id і веде статистику.",
     tags: ["Автор і розробник", "Telegram bot", "Docker", "yt-dlp"],
-    status: "В роботі",
+    status: "Завершено",
     tone: "teal",
     mark: "K",
     image: "https://raw.githubusercontent.com/Oleksii1221/Kokos/master/assets/kokoclip-logo.png",
@@ -51,7 +51,7 @@ const projects = [
     website: "https://oleksii1221.github.io/PIDron/",
     description: "Калькулятор PID для дрона: вводиш характеристики збірки, отримуєш P/I/D/feedforward і за потреби прошиваєш їх у польотник без ручного налаштування.",
     tags: ["Автор і розробник", "Windows", "Linux", "PID calculator", "Flight controller"],
-    status: "В роботі",
+    status: "В тестуванні",
     tone: "blue",
     mark: "PID",
     image: "https://raw.githubusercontent.com/Oleksii1221/PIDron/master/assets/icon.png",
@@ -139,6 +139,7 @@ for (const project of projects) {
   mark.textContent = project.mark || project.name.slice(0, 3).toUpperCase();
   card.querySelector(".status").textContent = project.status;
   card.querySelector(".status").classList.toggle("is-active", project.status === "В роботі");
+  card.querySelector(".status").classList.toggle("is-testing", project.status === "В тестуванні");
   card.querySelector("h3").textContent = project.name;
   card.querySelector(".project-description").textContent = project.description;
   const meta = card.querySelector(".project-meta");
@@ -148,11 +149,13 @@ for (const project of projects) {
     meta.appendChild(tagElement);
   }
 
-  if (project.website) {
-    liveLink.hidden = false;
-    liveLink.href = project.website;
-    liveLink.setAttribute("aria-label", `Відкрити сторінку проєкту ${project.name}`);
-  }
+  liveLink.hidden = false;
+  liveLink.href = project.website || project.repository;
+  liveLink.querySelector("span").textContent = project.website ? "Відкрити проєкт" : "Відкрити репозиторій";
+  liveLink.setAttribute(
+    "aria-label",
+    project.website ? `Відкрити сторінку проєкту ${project.name}` : `Відкрити репозиторій ${project.name}`,
+  );
 
   grid.appendChild(card);
 }
