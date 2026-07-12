@@ -15,7 +15,7 @@ const projects = [
     repository: "https://github.com/Oleksii1221/KEP_Schedule_PB",
     description: "Екосистема для розкладу Коледжу електронних приладів: Android APK, Telegram-бот, канали оновлень і зручний доступ для студентів без ручного пошуку пар.",
     tags: ["Автор і розробник", "Android APK", "Telegram bot", "College schedule"],
-    status: "В роботі",
+    status: "Покращується",
     tone: "orange",
     mark: "KEP",
     image: "https://raw.githubusercontent.com/Oleksii1221/KEP_Schedule_PB/master/icons/icon.svg",
@@ -151,6 +151,7 @@ for (const project of projects) {
   mark.textContent = project.mark || project.name.slice(0, 3).toUpperCase();
   card.querySelector(".status").textContent = project.status;
   card.querySelector(".status").classList.toggle("is-active", project.status === "В роботі");
+  card.querySelector(".status").classList.toggle("is-improving", project.status === "Покращується");
   card.querySelector(".status").classList.toggle("is-testing", project.status === "В тестуванні");
   card.querySelector(".status").classList.toggle("is-paused", project.status === "Відкладено");
   card.querySelector("h3").textContent = project.name;
