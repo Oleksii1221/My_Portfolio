@@ -77,6 +77,8 @@ const projects = [
     status: "Завершено",
     tone: "yellow",
     mark: "MBK",
+    image: "assets/projects/musicbykico-repository.png",
+    imageAlt: "GitHub-прев'ю репозиторію MusicByKico",
   },
   {
     name: "PAPUGA",
@@ -98,6 +100,8 @@ const projects = [
     status: "Завершено",
     tone: "green",
     mark: "TMP",
+    image: "assets/projects/thermometer-repository.png",
+    imageAlt: "GitHub-прев'ю репозиторію Thermometer",
   },
   {
     name: "MEDUZA",
@@ -107,6 +111,8 @@ const projects = [
     status: "Завершено",
     tone: "violet",
     mark: "MDZ",
+    image: "assets/projects/meduza-repository.png",
+    imageAlt: "GitHub-прев'ю репозиторію MEDUZA",
   },
   {
     name: "ESP NOW Testing",
@@ -116,6 +122,8 @@ const projects = [
     status: "Завершено",
     tone: "teal",
     mark: "ESP",
+    image: "assets/projects/esp-now-testing-repository.png",
+    imageAlt: "GitHub-прев'ю репозиторію ESP NOW Testing",
   },
   {
     name: "Hodivnytsya",
