@@ -134,6 +134,20 @@ const grid = document.querySelector("#projects");
 const template = document.querySelector("#project-template");
 document.querySelector("#project-count").textContent = `${projects.length} проєктів`;
 
+const getRepositoryPath = (repository) => {
+  try {
+    return new URL(repository).pathname.replace(/^\/|\/$/g, "");
+  } catch {
+    return repository.split("github.com/").pop().replace(/\/$/g, "");
+  }
+};
+
+const getRepositoryPreview = (repository) => {
+  const repositoryPath = getRepositoryPath(repository);
+  const cacheKey = repositoryPath.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  return `https://opengraph.githubassets.com/portfolio-${cacheKey}/${repositoryPath}`;
+};
+
 for (const project of projects) {
   const card = template.content.cloneNode(true);
   const article = card.querySelector("article");
@@ -145,9 +159,17 @@ for (const project of projects) {
   article.classList.add(`tone-${project.tone}`);
   repositoryLink.href = project.repository;
   repositoryLink.setAttribute("aria-label", `Відкрити репозиторій ${project.name}`);
-  image.src = project.image || `https://opengraph.githubassets.com/portfolio-real/Oleksii1221/${project.repository.split("/").pop()}`;
+  const repositoryPreview = getRepositoryPreview(project.repository);
+  image.src = project.image || repositoryPreview;
   image.alt = project.imageAlt || `Прев'ю проєкту ${project.name}`;
-  image.addEventListener("error", () => image.classList.add("image-unavailable"), { once: true });
+  image.addEventListener("error", () => {
+    if (project.image && image.src !== repositoryPreview) {
+      image.src = repositoryPreview;
+      return;
+    }
+
+    image.classList.add("image-unavailable");
+  });
   mark.textContent = project.mark || project.name.slice(0, 3).toUpperCase();
   card.querySelector(".status").textContent = project.status;
   card.querySelector(".status").classList.toggle("is-active", project.status === "В роботі");
